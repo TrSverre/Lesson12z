@@ -1,4 +1,4 @@
-FROM ubuntu:18.04 as build
+FROM ubuntu:20.04 as build
 RUN apt update
 RUN apt install openjdk-11-jdk -y
 RUN apt install git maven -y
