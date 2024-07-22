@@ -1,6 +1,7 @@
 FROM ubuntu:20.04 as build
 RUN apt update
-RUN apt install openjdk-11-jdk git maven -y
+RUN apt install openjdk-11-jdk -y
+RUN apt install git maven -y
 RUN git clone https://github.com/TrSverre/lesson12rep.git -b master
 RUN mvn -f lesson12rep/pom.xml package
 
